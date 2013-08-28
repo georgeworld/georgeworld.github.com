@@ -289,12 +289,12 @@ Full-Width Styles
 }
 
 #header_wrap {
-  background: #E8FAFC; /** #212121 */
-  background: -moz-linear-gradient(top, #017C87, #E8FAFC);
-  background: -webkit-linear-gradient(top, #017C87, #E8FAFC);
-  background: -ms-linear-gradient(top, #017C87, #E8FAFC);
-  background: -o-linear-gradient(top, #017C87, #E8FAFC);
-  background: linear-gradient(top, #017C87, #E8FAFC);
+  background: #E8FAFC; /** #212121 这个颜色是浅色 */
+  background: -moz-linear-gradient(top, #02CADC, #E8FAFC);
+  background: -webkit-linear-gradient(top, #02CADC, #E8FAFC);
+  background: -ms-linear-gradient(top, #02CADC, #E8FAFC);
+  background: -o-linear-gradient(top, #02CADC, #E8FAFC);
+  background: linear-gradient(top, #02CADC, #E8FAFC);
   /*background: -moz-linear-gradient(top, #373737, #212121);
   background: -webkit-linear-gradient(top, #373737, #212121);
   background: -ms-linear-gradient(top, #373737, #212121);
