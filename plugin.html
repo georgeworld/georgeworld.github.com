@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="zh-CN" manifest="cache.manifest">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Snaker - 开源轻量级工作流引擎</title>
+</head>
+<link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.min.css"/>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+<link rel="stylesheet" type="text/css" href="css/common.css"/>
+<link rel="stylesheet" type="text/css" href="css/shCoreDefault.css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/shCore.js"></script>
+<script type="text/javascript" src="js/shBrushXml.js"></script>
+<script type="text/javascript" src="js/shBrushJava.js"></script>
+<script type="text/javascript">SyntaxHighlighter.all();</script>
+<body>
+	<div class="navbar-wrapper">
+    	<div class="container">
+        	<div class="navbar navbar-inverse">
+            	<div class="navbar-inner">
+                	<button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                   </button>
+                   <a class="brand" href="#">Snaker</a>
+                   <div class="nav-collapse collapse">
+                    	<ul class="nav">
+                  			<li><a href="index.html">首页</a></li>
+							<li><a href="quickstart.html">入门</a></li>
+							<li class="active"><a href="plugin.html">插件</a></li>
+							<li><a href="example.html">实例</a></li>
+							<li><a href="integration.html">集成</a></li>
+							<li><a href="design.html">设计</a></li>
+                        </ul>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+	<article class="container">
+	<section class="row" id="travel" style="margin-top: 80px;">
+        <div class="span12 panel" style="display: block;">
+        	<div class="row">
+            	<div class="span12">
+                	<div class="block-left">
+                        <h4>1 安装插件</h4>
+                        <p>获取插件位置:snaker-core-master/dist/plugins/snaker-designer_1.3.0.jar</a></p>
+						<p>安装插件:复制snaker-designer_1.3.0.jar到eclipse的plugins目录下，重新启动eclipse即可(经过测试的版本有eclipse4.2/4.3)</p>
+                        <br>
+                        <h4>2 定义流程</h4>
+                        <p>依次选择File->New->Other->Snaker，如果安装成功，如下图所示:</p>
+						<img src="img/plugin1.png"/>
+                        <p>选择Snaker Process File并输入文件名称，如下图所示:</p>
+						<img src="img/plugin2.png"/>
+						<p>点击Finish，则打开流程设计器主界面，其中包括两大部分:流程组件、属性Properties视图，如下图所示:</p>
+						<img src="img/plugin3.png"/>
+						<h5>流程组件:</h5>
+						<p>目前节点组件包括:start、end、task、custom、sub-process、decision、fork、join，分别对应开始、结束、任务、自定义、子流程、决策、分支、合并组件模型.</p>
+						<h5>属性视图:</h5>
+						<p>对组件模型设置属性，包括常用的name、displayName等</p>
+						<h5>布局工具:</h5>
+						<p>右上角的网格、几何对齐用于图形布局.</p>
+						<br>
+                        <h4>3 属性说明</h4>
+						<table class="table table-bordered">
+						  <tr>
+						    <th>组件模型</th>
+							<th>属性</th>
+							<th>描述</th>
+						  </tr>
+						  <tr>
+						    <td rowspan="4">通用属性</td>
+							<td>name</td>
+							<td>组件名称，模型内名称唯一</td>
+						  </tr>
+						  <tr>
+							<td>displayName</td>
+							<td>组件中文显示名称，方便阅读</td>
+						  </tr>
+						  <tr>
+							<td>preInterceptors</td>
+							<td>前置拦截器</td>
+						  </tr>
+						  <tr>
+							<td>postInterceptors</td>
+							<td>后置拦截器</td>
+						  </tr>
+						  <tr>
+						    <td rowspan="3">Process</td>
+							<td>expireTime</td>
+							<td>期望完成时间，设置表达式变量由参数传递</td>
+						  </tr>
+						  <tr>
+							<td>instanceUrl</td>
+							<td>流程定义列表页面直接启动流程实例的URL</td>
+						  </tr>
+						  <tr>
+							<td>instanceNoClass</td>
+							<td>流程实例编号生成类</td>
+						  </tr>
+						  <tr>
+						    <td>Transition</td>
+							<td>expr</td>
+							<td>决策选择Decision节点的输出变迁表达式</td>
+						  </tr>
+						  <tr>
+						    <td rowspan="5">Task</td>
+							<td>form</td>
+							<td>用户参与的表单任务对应的URL</td>
+						  </tr>
+						  <tr>
+							<td>assignee</td>
+							<td>任务参与者变量</td>
+						  </tr>
+						  <tr>
+							<td>assignmentHandler</td>
+							<td>任务参与者处理类</td>
+						  </tr>
+						  <tr>
+							<td>expireTime</td>
+							<td>期望完成时间，设置表达式变量由参数传递</td>
+						  </tr>
+						  <tr>
+							<td>performType</td>
+							<td>任务参与类型（针对多个参与者），ANY为其中一个参与者完成即往下流转；ALL为所有参与者完成才往下流转</td>
+						  </tr>
+						  <tr>
+						    <td rowspan="4">Custom</td>
+							<td>clazz</td>
+							<td>自定义节点的Java类路径，两种方式：<br>
+                                1.实现IHandler接口，实现接口时不需要设置下面三个属性。<br>
+                                2.无接口实现的普通java类，需要设置下面方法名称、参数属性
+                            </td>
+						  </tr>
+						  <tr>
+							<td>methodName</td>
+							<td>定义需要执行的java类的方法名称</td>
+						  </tr>
+						  <tr>
+							<td>args</td>
+							<td>定义传递的参数表达式</td>
+						  </tr>
+						  <tr>
+							<td>var</td>
+							<td>定义返回值变量名称</td>
+						  </tr>
+						  <tr>
+						    <td>SubProcess</td>
+							<td>processName</td>
+							<td>子流程名称（对应process的name属性）</td>
+						  </tr>
+						  <tr>
+						    <td rowspan="2">Decision</td>
+							<td>expr</td>
+							<td>决策选择表达式</td>
+						  </tr>
+						  <tr>
+							<td>handleClass</td>
+							<td>决策选择的处理类，实现DecisionHandler接口</td>
+						  </tr>
+						</table>
+                        <br>
+                    </div>
+                </div>
+			</div>
+        </div>
+    </section>
+    </article>
+    <div class="container marketing">
+		<footer>
+			<p>&copy; 2014 Snaker</p>
+		</footer>    
+    </div>
+</body>
+</html>

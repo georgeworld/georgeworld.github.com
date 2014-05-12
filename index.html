@@ -1,96 +1,220 @@
 <!DOCTYPE html>
-<html>
-
-    <head>
-        <meta charset='utf-8' />
-        <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-        <meta name="description" content="George World : George's blog on github" />
-
-        <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
-        <title>George World</title>
-    </head>
-
-    <body>
-
-        <!-- HEADER -->
-        <div id="header_wrap" class="outer">
-            <header class="inner">
-                <a id="forkme_banner" href="http://www.georgeinfo.com">George is thinking</a>
-
-                <h1 id="project_title">George World</h1>
-                <h2 id="project_tagline">George is thinking</h2>
-
-            </header>
-        </div>
-
-        <!-- MAIN CONTENT -->
-        <div id="main_content_wrap" class="outer">
-            <section id="main_content" class="inner">
-                <h3>
-                    <a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to George's GitHub Page.</h3>
-
-                <div>
-                    <div>
-                        这里是乔治的github pages，欢迎访问！
-                    </div>
-                    <div style="border: solid #0000FF 2px">
-                        乔治博客:(<a href="http://www.georgeinfo.com" target="_blank">George is thinking</a>)<br />
-                    </div>
-                    
-
-                    This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:
+<html lang="zh-CN" manifest="cache.manifest">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Snaker - 开源轻量级工作流引擎</title>
+</head>
+<link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.min.css"/>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+<link rel="stylesheet" type="text/css" href="css/common.css"/>
+<link rel="stylesheet" type="text/css" href="css/shCoreDefault.css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/shCore.js"></script>
+<script type="text/javascript" src="js/shBrushXml.js"></script>
+<script type="text/javascript" src="js/shBrushJava.js"></script>
+<script type="text/javascript">SyntaxHighlighter.all();</script>
+<body>
+	<div class="navbar-wrapper">
+    	<div class="container">
+        	<div class="navbar navbar-inverse">
+            	<div class="navbar-inner">
+                	<button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                   </button>
+                   <a class="brand" href="#">Snaker</a>
+                   <div class="nav-collapse collapse">
+                    	<ul class="nav">
+                  			<li class="active"><a href="index.html">首页</a></li>
+							<li><a href="quickstart.html">入门</a></li>
+							<li><a href="plugin.html">插件</a></li>
+							<li><a href="example.html">实例</a></li>
+							<li><a href="integration.html">集成</a></li>
+							<li><a href="design.html">设计</a></li>
+                        </ul>
+                   </div>
                 </div>
-
-                <pre>
-                     <code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-                     </code>
-                </pre>
-
-                <p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
-                <h3>
-                    <a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
-
-                <p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-                <h3>
-                    <a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
-
-                <p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-                <h3>
-                    <a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-                <p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-                <h3>
-                    <a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-                <p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-            </section>
+            </div>
         </div>
+    </div>
 
-        <!-- FOOTER  -->
-        <div id="footer_wrap" class="outer">
-            <footer class="inner">
-                <p>乔治的主页 <a href="http://georgeinfo.com">Georgeinfo.com</a></p>
-            </footer>
+	<article class="container">
+	<section class="row" id="travel" style="margin-top: 80px;">
+        <div class="span12 panel" style="display: block;">
+        	<div class="row">
+            	<div class="span6">
+                	<div class="block-left">
+                        <h3>概述</h3>
+                        <p>Snaker是一个基于Java的开源工作流引擎，适用于企业应用中常见的业务流程。本着轻量、简单、灵巧理念设计，定位于简单集成，多环境支持</p>
+                        <br>
+						<p>轻量:snaker-core.jar大小不超过200K，代码行数不足7000行，强大的扩展支持，不依赖于具体的ORM框架</p>
+						<p>简单:表设计简单[仅7张表]，流程组件简单[start/end/task/custom/subprocess/decision/fork/join]</p>
+						<p>灵巧:暴露大量可扩展接口，支持流程设计器、流程引擎的组件模型自定义</p>
+						<p>开源协议:<a href="http://www.apache.org/licenses/LICENSE-2.0.html" target="_blank">Apache License Version 2.0</a></p>
+                    </div>
+                </div>
+                
+                <div class="span6">
+					<div class="block-left">
+						<h3>整合</h3>
+                        <p>maven项目中，直接在pom文件中添加snaker的依赖即可:</p>
+						<pre class="brush: xml;">
+							<dependency>
+								<groupId>com.github.snakerflow</groupId>
+								<artifactId>snaker-core</artifactId>
+								<version>1.3.0</version>
+							</dependency>
+						</pre>
+						<p>非maven项目需要添加snaker的依赖包:</p>
+						<pre class="brush: java;">
+							cglib-nodep-2.2.jar
+							commons-beanutils-1.8.3.jar
+							commons-lang-2.5.jar
+							jackson-core-asl-1.9.4.jar
+							jackson-mapper-asl-1.9.4.jar
+							slf4j-api-1.7.2.jar
+							snaker-core-1.3.0.jar
+						</pre>
+					</div>
+        		</div>
+			</div>
         </div>
+    </section>
+	<section class="row" id="apple" style="margin-top: 0px;">
+   		<div class="span12 panel relative" style="display: block;">
+        	<div class="row">
+                <div class="span6">
+					<div class="padding-huge">
+						<h3>资源</h3>
+                        <p>流程引擎源码(github):<br><a href="https://github.com/snakerflow/snaker-core" target="_blank">https://github.com/snakerflow/snaker-core</a></p>
+						<p>演示应用源码(github):<br><a href="https://github.com/snakerflow/snaker-demo" target="_blank">https://github.com/snakerflow/snaker-demo</a></p>
+						<p>插件源码(github):<br><a href="https://github.com/snakerflow/snaker-designer" target="_blank">https://github.com/snakerflow/snaker-designer</a></p>
+						<br>
+						<p>流程引擎源码(oscgit):<br><a href="http://git.oschina.net/yuqs/snaker-core" target="_blank">http://git.oschina.net/yuqs/snaker-core</a></p>
+						<p>演示应用源码(oscgit):<br><a href="http://git.oschina.net/yuqs/snaker-demo" target="_blank">http://git.oschina.net/yuqs/snaker-demo</a></p>
+						<p>插件源码(oscgit):<br><a href="http://git.oschina.net/yuqs/snaker-designer" target="_blank">http://git.oschina.net/yuqs/snaker-designer</a></p>
+					</div>
+				</div>
+                <div class="span6">
+					<div class="padding-huge">
+						<h3>联系</h3>
+						<p>QQ群:<font color="red">293568574</font></p>
+						<p>邮箱:<font color="red">snakerflow@163.com</font></p>
+					</div>
+                </div>
+			</div>
+		</div>
+    </section>
+	<section class="row" id="apple" style="margin-top: 0px;">
+   		<div class="span12 panel relative" style="display: block;">
+        	<div class="row">
+                <div class="span12">
+					<div class="padding-huge">
+						<h3>版本升级日志</h3>
+						<h4><font color="red">version 1.4.0[计划中]</font></h4>
+						<p>
+						1.时限控制:任务超时提醒、流程实例超时提醒，任务自动执行<br>
+						2.支持任务委托代理<br>
+						3.代码重构<br>
+						4.Other......<br>
+						</p>
 
-        <script type="text/javascript">
-            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-        </script>
-        <script type="text/javascript">
-            try {
-                var pageTracker = _gat._getTracker("UA-16598422-3");
-                pageTracker._trackPageview();
-            } catch (err) {
-            }
-        </script>
+						<br>
+						<h4><font color="red">version 1.3.0</font></h4>
+						<p>
+						1.增加对流程表原生SQL的查询nativeQuery...()<br>
+						2.增加Cache机制，支持单个虚拟机环境的内存cache以及ehcache<br>
+						3.动态添加参与者方法engine.task().addTaskActor()支持performType参数<br>
+						4.流程定义支持多版本，如根据name启动流程，默认启动最新版本<br>
+						5.增加postgresql数据库的schema及dialect.需要调整bytea类型处理<br>
+						6.wf_process表删除query_sql、parent_id字段，并且name字段删除唯一性约束<br>
+						7.代码重构<br>
+						8.bug:流程重新部署redeploy方法中的save->update<br>
+						9.bug:mybatis的updateProcess配置sql中删除query_url字段<br>
+						10.bug:dbAccess的updateProcess方法参数问题修复<br>
+						11.bug:分页查询sql语句引用问题<br>
+						</p>
 
-    </body>
+						<br>
+						<h4><font color="red">version 1.2.6</font></h4>
+						<p>
+						1.增加QueryFilter查询过滤类，增强IQueryService的查询api<br>
+						</p>
+
+						<br>
+						<h4><font color="red">version 1.2.5</font></h4>
+						<p>
+						1.流程定义业务类调整，去除update方法。统一使用deploy部署、更新<br>
+						2.bug:join节点的合并规则问题修复 <br>
+						3.代码重构<br>
+						</p>
+
+						<br>
+						<h4><font color="red">version 1.2.4</font></h4>
+						<p>
+						1.去除@override注解<br>
+						2.降低dbcp、dbutils依赖库的版本适应jdk5<br>
+						3.jdk5依赖调整<br>
+						4.测试用例以snaker-example项目独立<br>
+						</p>
+
+						<br>
+						<h4><font color="red">version 1.2.3</font></h4>
+						<p>
+						1.提高服务上下文ServiceContext方法的可见性<br>
+						2.增加SpringHelper帮助类适应低版本spring<br>
+						3.调整Spring的api以适应低版本spring<br>
+						4.升级流程设计器插件snaker-designer-1.3.0<br>
+						5.代码重构<br>
+						</p>
+
+						<br>
+						<h4><font color="red">version 1.2.2</font></h4>
+						<p>
+						1.增加spel的表达式支持.与spring整合时，默认使用spel解析器<br>
+						</p>
+
+						<br>
+						<h4><font color="red">version 1.2.1</font></h4>
+						<p>
+						1.支持自定义表达式引擎实现。默认使用juel引擎<br>
+						2.删除bsh表达式引擎的依赖<br>
+						3.删除ExprHelper帮助类<br>
+						4.改造decision的测试用例<br>
+						</p>
+
+						<br>
+						<h4><font color="red">version 1.2.0</font></h4>
+						<p>
+						1.Task模型增加assignmentHandler属性，通过实现AssignmentHandler接口支持编码设置参与者<br>
+						2.删除流程定义仅更新状态state，物理数据不删除<br>
+						3.支持所有节点模型的前置、后置拦截器<br>
+						4.bug:mybatis相关问题修复<br>
+						</p>
+
+						<br>
+						<h4><font color="red">version 1.0/1.*</font></h4>
+						<p>
+						首次提交，实现基本功能:<br>
+						1.支持常规业务流程逻辑[直流、选择分支、并行、子流程、会签、任意流]<br>
+						2.支持驳回、任意回退、撤回、加减签<br>
+						3.支持Spring环境下的依赖管理<br>
+						4.支持以下orm框架：jdbc+dbutils、mybatis、hibernate、springjdbc<br>
+						5.支持以上orm框架的事务管理以及JTA事务管理<br>
+						</p>
+						</p>
+					</div>
+                </div>
+			</div>
+		</div>
+    </section>
+    </article>
+    <div class="container marketing">
+		<footer>
+			<p>&copy; 2014 Snaker</p>
+		</footer>    
+    </div>
+</body>
 </html>
