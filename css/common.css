@@ -17,6 +17,10 @@ a:hover:not(.btn), a:active:not(.btn) {
     text-decoration: none;
     transform: translateY(-8px);
 }
+.text-line-style{
+    line-height:36px;
+	font-size:22px;
+}
 .padding-huge {
     padding: 27px;
 }
