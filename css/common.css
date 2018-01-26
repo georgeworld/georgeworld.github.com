@@ -48,6 +48,11 @@ hr.soften {
 }
 .nav a {
     transition: all 500ms ease 0s;
+	font-size:22px;
+}
+.nav-font-style li{
+	line-height:36px;
+	font-size:22px;
 }
 header {
     margin-top: 40px;
