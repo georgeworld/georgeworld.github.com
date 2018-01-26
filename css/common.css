@@ -21,6 +21,10 @@ a:hover:not(.btn), a:active:not(.btn) {
     line-height:36px;
 	font-size:22px;
 }
+.text-line-style p{
+    line-height:36px;
+	font-size:22px;
+}
 .padding-huge {
     padding: 27px;
 }
