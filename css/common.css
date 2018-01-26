@@ -3,9 +3,7 @@ body {
     background: url("../img/mooning.png") repeat scroll 0 0 #E5E5E5;
     overflow-x: hidden;
 }
-img{
-	border:none;
-}
+img{border:none;}
 p {
     cursor: default;
     font: 500 15px/1.8 'Optima','Songti SC','Verdana','Microsoft Yahei',simsun,serif;
