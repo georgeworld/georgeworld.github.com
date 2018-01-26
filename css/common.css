@@ -3,7 +3,8 @@ body {
     background: url("../img/mooning.png") repeat scroll 0 0 #E5E5E5;
     overflow-x: hidden;
 }
-img, p {
+img{
+	border:none;
 }
 p {
     cursor: default;
